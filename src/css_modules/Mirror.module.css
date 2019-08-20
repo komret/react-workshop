@@ -1,0 +1,30 @@
+.mirror {
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.portrait {
+    animation: fadein 15s;
+    height: 91%;
+    margin: 1.75rem;
+}
+
+.text {
+    font-size: 3rem;
+    margin: 8rem 2rem;
+    text-align: center;
+}
+
+.wrapper {
+    flex: 0 0 34%;
+    height: calc(100vh - 4rem);
+    margin: 2rem;
+    position: relative;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
