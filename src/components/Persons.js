@@ -10,8 +10,8 @@ export const Persons = props => {
             <ul>
                 {data.map(person =>
                     <li key={person}>
-                        <input type="checkbox" onClick={event => props.changeStatus(event, person)}/>
-                        <span>{person}</span>
+                        <input type="checkbox" name={person} onClick={event => props.changeStatus(event, person)}/>
+                        <label>{person}</label>
                     </li>
                 )}
             </ul>
