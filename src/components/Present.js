@@ -7,11 +7,7 @@ export const Present = props => {
         <div className={styles.wrapper}>
             <h2>Přítomni:</h2>
             <ul>
-                {props.present.map(person =>
-                    <li key={person}>
-                        {person}
-                    </li>
-                )}
+                {props.present.map(person => <li key={person}>{person}</li>)}
             </ul>
         </div>
     )

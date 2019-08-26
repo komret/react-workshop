@@ -15,7 +15,7 @@ export const App = () => {
             (present => present.filter(person => person !== name)));
 
     return (
-        <div className={styles.app}>
+        <div className={styles.wrapper}>
             <Persons persons={data} changeStatus={changeStatus}/>
             <Mirror present={present}/>
             <Present present={present}/>
