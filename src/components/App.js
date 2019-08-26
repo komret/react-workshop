@@ -8,10 +8,10 @@ import styles from '../css_modules/App.module.css';
 export const App = () => {
     const [present, setPresent] = useState([]);
 
-    const changeStatus = (event, name) =>
+    const changeStatus = (event, person) =>
         setPresent(event.target.checked ?
-            (present => [...present, name]) :
-            (present => present.filter(person => person !== name)));
+            (present => [...present, person]) :
+            (present => present.filter(name => name !== person)));
 
     return (
         <div className={styles.wrapper}>
