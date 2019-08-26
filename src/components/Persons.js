@@ -1,5 +1,6 @@
 import React from 'react'
 
+import data from '../data.json';
 import styles from '../css_modules/Persons.module.css';
 
 export const Persons = props => {
@@ -7,7 +8,7 @@ export const Persons = props => {
         <div className={styles.wrapper}>
             <h2>Kdo je v kanclu?</h2>
             <ul>
-                {props.persons.map(person =>
+                {data.map(person =>
                     <li key={person}>
                         <input type="checkbox" onClick={event => props.changeStatus(event, person)}/>
                         <span>{person}</span>
